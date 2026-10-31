@@ -1,19 +1,19 @@
 # xir-g4
 
-[![Build](https://github.com/jurgenei/xir-g4/actions/workflows/ci.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/ci.yml)
-[![Release](https://github.com/jurgenei/xir-g4/actions/workflows/release.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/release.yml)
-[![Coverage CI](https://github.com/jurgenei/xir-g4/actions/workflows/coverage.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/coverage.yml)
-[![CodeQL](https://github.com/jurgenei/xir-g4/actions/workflows/codeql.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/codeql.yml)
-[![Dependency Check](https://github.com/jurgenei/xir-g4/actions/workflows/dependency-check.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/dependency-check.yml)
-[![SpotBugs Security](https://github.com/jurgenei/xir-g4/actions/workflows/spotbugs-security.yml/badge.svg)](https://github.com/jurgenei/xir-g4/actions/workflows/spotbugs-security.yml)
-[![Coverage](https://codecov.io/gh/jurgenei/xir-g4/graph/badge.svg?branch=main)](https://codecov.io/gh/jurgenei/xir-g4?branch=main)
-[![Maven Central](https://img.shields.io/maven-central/v/name.jurgenei.ast/xir-g4.svg)](https://search.maven.org/artifact/name.jurgenei.ast/xir-g4)
+[![Build](https://github.com/flowdigger/xir-g4/actions/workflows/ci.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/ci.yml)
+[![Release](https://github.com/flowdigger/xir-g4/actions/workflows/release.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/release.yml)
+[![Coverage CI](https://github.com/flowdigger/xir-g4/actions/workflows/coverage.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/coverage.yml)
+[![CodeQL](https://github.com/flowdigger/xir-g4/actions/workflows/codeql.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/codeql.yml)
+[![Dependency Check](https://github.com/flowdigger/xir-g4/actions/workflows/dependency-check.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/dependency-check.yml)
+[![SpotBugs Security](https://github.com/flowdigger/xir-g4/actions/workflows/spotbugs-security.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/spotbugs-security.yml)
+[![Coverage](https://codecov.io/gh/flowdigger/xir-g4/graph/badge.svg?branch=main)](https://codecov.io/gh/flowdigger/xir-g4?branch=main)
+[![Maven Central](https://img.shields.io/maven-central/v/name.flowdigger.ast/xir-g4.svg)](https://search.maven.org/artifact/name.flowdigger.ast/xir-g4)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Java](https://img.shields.io/badge/java-21+-green.svg)](https://www.oracle.com/java/)
 [![Gradle](https://img.shields.io/badge/gradle-9.5+-blue.svg)](https://gradle.org/)
 
 ANTLR Grammar -> Model -> AST Classes core library.
-XIR rendering is backed by `name.jurgenei.xir.XirSerializer` (`name.jurgenei:xir-sax`).
+XIR rendering is backed by `name.flowdigger.xir.XirSerializer` (`name.flowdigger:xir-sax`).
 
 Focus v0.1:
 - Java 21
@@ -31,7 +31,7 @@ Focus v0.1:
 Structured Knowledge -> XIR -> Observation -> Derivation -> Knowledge -> Applications
 ```
 
-Next repository in reading path: [example-lineage-plsql](https://github.com/jurgenei/example-lineage-plsql).
+Next repository in reading path: [example-lineage-plsql](https://github.com/flowdigger/example-lineage-plsql).
 
 ## Architecture
 
@@ -41,7 +41,7 @@ ANTLR ParseTree --(ParseTreeToGrammarModelMapper)--> GrammarModel --(AstClassDer
 
 ## Implemented derivation rules
 
-From `jurgenei/papers/ANTLR_G4_to_AST_Classes_Spec.md`:
+From `flowdigger/papers/ANTLR_G4_to_AST_Classes_Spec.md`:
 - Rule 1: parser rule -> class
 - Rule 2: labels -> named `rel` relationships
 - Rule 3: cardinalities (`1`, `?`, `*`, `+`)
