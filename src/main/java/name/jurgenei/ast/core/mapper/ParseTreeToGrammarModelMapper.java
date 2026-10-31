@@ -1,6 +1,6 @@
-package name.jurgenei.ast.core.mapper;
+package org.flowdigger.ast.core.mapper;
 
-import name.jurgenei.ast.core.model.GrammarModel;
+import org.flowdigger.ast.core.model.GrammarModel;
 import org.antlr.v4.runtime.tree.ParseTree;
 
 /**

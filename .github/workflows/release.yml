@@ -83,7 +83,7 @@ jobs:
           )
           rm -rf "$TMP_DIR"
           curl --fail-with-body -sS -u "$CENTRAL_USERNAME:$CENTRAL_PASSWORD" \
-            -X POST "https://central.sonatype.com/api/v1/publisher/upload?nameSpace=name.jurgenei.ast&publishingType=AUTOMATIC" \
+            -X POST "https://central.sonatype.com/api/v1/publisher/upload?nameSpace=org.flowdigger.ast&publishingType=AUTOMATIC" \
             -F "bundle=@$BUNDLE_PATH" | tee central-upload-response.json
 
       - name: Upload publish log

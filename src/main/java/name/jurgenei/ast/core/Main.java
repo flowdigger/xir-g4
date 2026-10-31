@@ -1,7 +1,7 @@
-package name.jurgenei.ast.core;
+package org.flowdigger.ast.core;
 
-import name.jurgenei.ast.core.model.AstModel;
-import name.jurgenei.ast.core.model.GrammarModel;
+import org.flowdigger.ast.core.model.AstModel;
+import org.flowdigger.ast.core.model.GrammarModel;
 
 /**
  * Tiny runner for local manual verification.

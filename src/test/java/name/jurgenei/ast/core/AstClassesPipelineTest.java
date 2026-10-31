@@ -1,8 +1,8 @@
-package name.jurgenei.ast.core;
+package org.flowdigger.ast.core;
 
-import name.jurgenei.ast.core.mapper.ParseTreeToGrammarModelMapper;
-import name.jurgenei.ast.core.model.AstModel;
-import name.jurgenei.ast.core.model.GrammarModel;
+import org.flowdigger.ast.core.mapper.ParseTreeToGrammarModelMapper;
+import org.flowdigger.ast.core.model.AstModel;
+import org.flowdigger.ast.core.model.GrammarModel;
 import org.antlr.v4.runtime.tree.ParseTree;
 import org.junit.jupiter.api.Test;
 

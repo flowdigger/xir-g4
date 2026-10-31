@@ -40,7 +40,7 @@ dependencies {
 }
 
 application {
-    mainClass = 'name.jurgenei.ast.core.Main'
+    mainClass = 'org.flowdigger.ast.core.Main'
 }
 
 publishing {
