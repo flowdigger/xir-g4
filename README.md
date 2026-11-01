@@ -13,7 +13,7 @@
 [![Gradle](https://img.shields.io/badge/gradle-9.5+-blue.svg)](https://gradle.org/)
 
 ANTLR Grammar -> Model -> AST Classes core library.
-XIR rendering is backed by `name.flowdigger.xir.XirSerializer` (`name.flowdigger:xir-sax`).
+XIR rendering is backed by `org.flowdigger.xir.XirSerializer` (`org.flowdigger:xir-sax`).
 
 Focus v0.1:
 - Java 21
