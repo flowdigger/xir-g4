@@ -1,6 +1,6 @@
 package org.flowdigger.ast.core;
 
-import name.jurgenei.xir.XirSerializer;
+import org.flowdigger.xir.XirSerializer;
 import org.flowdigger.ast.core.model.AstClass;
 import org.flowdigger.ast.core.model.AstInheritance;
 import org.flowdigger.ast.core.model.AstModel;
