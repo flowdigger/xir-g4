@@ -7,13 +7,13 @@
 [![Dependency Check](https://github.com/flowdigger/xir-g4/actions/workflows/dependency-check.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/dependency-check.yml)
 [![SpotBugs Security](https://github.com/flowdigger/xir-g4/actions/workflows/spotbugs-security.yml/badge.svg)](https://github.com/flowdigger/xir-g4/actions/workflows/spotbugs-security.yml)
 [![Coverage](https://codecov.io/gh/flowdigger/xir-g4/graph/badge.svg?branch=main)](https://codecov.io/gh/flowdigger/xir-g4?branch=main)
-[![Maven Central](https://img.shields.io/maven-central/v/name.flowdigger.ast/xir-g4.svg)](https://search.maven.org/artifact/name.flowdigger.ast/xir-g4)
+[![Maven Central](https://img.shields.io/maven-central/v/org.flowdigger.ast/xir-g4.svg)](https://search.maven.org/artifact/org.flowdigger.ast/xir-g4)
 [![License](https://img.shields.io/badge/license-MIT-blue.svg)](LICENSE)
 [![Java](https://img.shields.io/badge/java-21+-green.svg)](https://www.oracle.com/java/)
 [![Gradle](https://img.shields.io/badge/gradle-9.5+-blue.svg)](https://gradle.org/)
 
 ANTLR Grammar -> Model -> AST Classes core library.
-XIR rendering is backed by `name.flowdigger.xir.XirSerializer` (`name.flowdigger:xir-sax`).
+XIR rendering is backed by `org.flowdigger.xir.XirSerializer` (`org.flowdigger:xir-sax`).
 
 Focus v0.1:
 - Java 21
