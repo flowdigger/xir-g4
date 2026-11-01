@@ -35,7 +35,7 @@ jobs:
       - name: Run OWASP Dependency-Check (retry on transient NVD update failures)
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
-          GRADLE_OPTS: -Xmx2g -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8
+          ORG_GRADLE_JVMARGS: -Xmx2g -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8
         shell: bash
         run: |
           set -euo pipefail
@@ -48,7 +48,7 @@ jobs:
             echo "Dependency-Check attempt $attempt/$max_attempts"
 
             log_file="dependency-check-attempt-${attempt}.log"
-            if ./gradlew dependencyCheckAnalyze --no-daemon --no-configuration-cache --stacktrace "${gradle_nvd_override[@]}" 2>&1 | tee "$log_file"; then
+            if ./gradlew dependencyCheckAnalyze --no-daemon --no-configuration-cache --stacktrace -Dorg.gradle.jvmargs="$ORG_GRADLE_JVMARGS" "${gradle_nvd_override[@]}" 2>&1 | tee "$log_file"; then
               echo "Dependency-Check completed on attempt $attempt"
               exit 0
             fi
