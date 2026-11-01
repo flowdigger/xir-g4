@@ -1,4 +1,4 @@
-package name.jurgenei.ast.core.model;
+package org.flowdigger.ast.core.model;
 
 /**
  * Cardinality symbols preserved from grammar to AST class relationships.

@@ -1,6 +1,6 @@
-package name.jurgenei.ast.core;
+package org.flowdigger.ast.core;
 
-import name.jurgenei.ast.core.model.AstModel;
+import org.flowdigger.ast.core.model.AstModel;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertFalse;

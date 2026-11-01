@@ -1,10 +1,10 @@
-package name.jurgenei.ast.core;
+package org.flowdigger.ast.core;
 
-import name.jurgenei.ast.core.model.AstInheritance;
-import name.jurgenei.ast.core.model.AstModel;
-import name.jurgenei.ast.core.model.AstRelation;
-import name.jurgenei.ast.core.model.Cardinality;
-import name.jurgenei.ast.core.model.GrammarModel;
+import org.flowdigger.ast.core.model.AstInheritance;
+import org.flowdigger.ast.core.model.AstModel;
+import org.flowdigger.ast.core.model.AstRelation;
+import org.flowdigger.ast.core.model.Cardinality;
+import org.flowdigger.ast.core.model.GrammarModel;
 import org.junit.jupiter.api.Test;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
@@ -32,8 +32,8 @@ class AstClassDeriverTest {
         assertTrue(ast.classes().stream().anyMatch(c -> c.name().equals("Identifier")));
         assertTrue(ast.classes().stream().anyMatch(c -> c.name().equals("Expression")));
 
-        assertTrue(ast.relations().contains(new AstRelation("Assignment", "target", "Identifier", Cardinality.ONE, name.jurgenei.ast.core.model.RelationKind.REL)));
-        assertTrue(ast.relations().contains(new AstRelation("Assignment", "value", "Expression", Cardinality.ONE, name.jurgenei.ast.core.model.RelationKind.REL)));
+        assertTrue(ast.relations().contains(new AstRelation("Assignment", "target", "Identifier", Cardinality.ONE, org.flowdigger.ast.core.model.RelationKind.REL)));
+        assertTrue(ast.relations().contains(new AstRelation("Assignment", "value", "Expression", Cardinality.ONE, org.flowdigger.ast.core.model.RelationKind.REL)));
     }
 
     @Test
@@ -47,7 +47,7 @@ class AstClassDeriverTest {
 
         AstModel ast = new AstClassDeriver().derive(model);
 
-        assertTrue(ast.relations().contains(new AstRelation("Procedure", "parameter", "ParameterDef", Cardinality.STAR, name.jurgenei.ast.core.model.RelationKind.REL)));
+        assertTrue(ast.relations().contains(new AstRelation("Procedure", "parameter", "ParameterDef", Cardinality.STAR, org.flowdigger.ast.core.model.RelationKind.REL)));
     }
 
     @Test

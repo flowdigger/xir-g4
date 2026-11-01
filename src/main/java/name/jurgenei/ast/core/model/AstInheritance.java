@@ -1,4 +1,4 @@
-package name.jurgenei.ast.core.model;
+package org.flowdigger.ast.core.model;
 
 public record AstInheritance(String childClass, String parentClass) {
 }

@@ -1,11 +1,11 @@
-package name.jurgenei.ast.core;
+package org.flowdigger.ast.core;
 
-import name.jurgenei.xir.XirSerializer;
-import name.jurgenei.ast.core.model.AstClass;
-import name.jurgenei.ast.core.model.AstInheritance;
-import name.jurgenei.ast.core.model.AstModel;
-import name.jurgenei.ast.core.model.AstRelation;
-import name.jurgenei.ast.core.model.RelationKind;
+import org.flowdigger.xir.XirSerializer;
+import org.flowdigger.ast.core.model.AstClass;
+import org.flowdigger.ast.core.model.AstInheritance;
+import org.flowdigger.ast.core.model.AstModel;
+import org.flowdigger.ast.core.model.AstRelation;
+import org.flowdigger.ast.core.model.RelationKind;
 import org.xml.sax.SAXException;
 import org.xml.sax.helpers.AttributesImpl;
 
@@ -16,7 +16,7 @@ import java.util.Comparator;
  * Renders AST class model as canonical S-expression text.
  */
 public final class AstXirWriter {
-    private static final String INTERNAL_XDM_URI = "urn:name.jurgenei.xml:xdm";
+    private static final String INTERNAL_XDM_URI = "urn:org.flowdigger.xml:xdm";
     private static final String INTERNAL_XDM_PREFIX = "xdm";
 
     public String write(final AstModel astModel) {
