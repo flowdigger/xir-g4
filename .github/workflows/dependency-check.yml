@@ -35,6 +35,7 @@ jobs:
       - name: Run OWASP Dependency-Check (retry on transient NVD update failures)
         env:
           NVD_API_KEY: ${{ secrets.NVD_API_KEY }}
+          GRADLE_OPTS: -Xmx2g -XX:MaxMetaspaceSize=1024m -Dfile.encoding=UTF-8
         shell: bash
         run: |
           set -euo pipefail
@@ -96,4 +97,3 @@ jobs:
         run: |
           echo "### OWASP Dependency-Check" >> "$GITHUB_STEP_SUMMARY"
           echo "- Reports uploaded as workflow artifacts." >> "$GITHUB_STEP_SUMMARY"
-
