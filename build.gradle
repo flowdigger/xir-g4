@@ -13,7 +13,7 @@ plugins {
 }
 
 group = "org.flowdigger"
-version = "1.0.0"
+version = "1.0.1"
 
 def coreArtifactId = 'xir-g4'
 def groupPath = group.toString().replace('.', '/')
